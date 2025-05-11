@@ -1,5 +1,5 @@
 import pandas as pd
-from tabulate import tabulate
+# from tabulate import tabulate
 
 # from _csv_generator import file_path_gen
 file_path_gen = r"C:\Users\malwi\Desktop\Codding_stuff_MW\DataAnalysis_POC\DataAnalysis_POC\input_data11052025_10k.csv"
