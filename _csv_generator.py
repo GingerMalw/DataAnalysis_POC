@@ -18,7 +18,7 @@ def generate_recordings():
     return ",".join(str(random.randint(0, 9)) for _ in range(4))
 
 # Parameters
-num_records = 10000
+num_records = 2000
 num_users = 100
 start_time = datetime.strptime("11:00:00", "%H:%M:%S")
 end_time = datetime.strptime("15:00:00", "%H:%M:%S")
