@@ -2,4 +2,6 @@
 
 Description in progress
 
-- required env with pandas installed
+Libraries installed:
+- pandas
+- tabulate

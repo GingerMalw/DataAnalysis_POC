@@ -18,7 +18,7 @@ def generate_recordings():
     return ",".join(str(random.randint(0, 9)) for _ in range(4))
 
 # Parameters
-num_records = 2000
+num_records = 10000
 num_users = 100
 start_time = datetime.strptime("11:00:00", "%H:%M:%S")
 end_time = datetime.strptime("15:00:00", "%H:%M:%S")
@@ -83,7 +83,7 @@ records.sort(key=lambda x: x[0])
 header = ["Timestamp", "UserID", "SubID", "Version", "CrashCause", "ErrorMessage", "ErrorInfo", "Recordings", "Sequence"]
 timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
 # output_file_name = f"new_data_{timestamp}.csv"
-file_path_gen = r"C:\Users\malwi\Desktop\Codding_stuff_MW\DataAnalysis_POC\DataAnalysis_POC\input_data11052025.csv"
+file_path_gen = r"C:\Users\malwi\Desktop\Codding_stuff_MW\DataAnalysis_POC\DataAnalysis_POC\input_data11052025_10k.csv"
 
 with open(file_path_gen, mode='w', newline='') as file:
     writer = csv.writer(file)
