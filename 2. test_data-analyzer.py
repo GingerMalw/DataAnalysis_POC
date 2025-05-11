@@ -1,8 +1,8 @@
 import pandas as pd
 
-file_for_analyze = r"C:\Users\malwi\Desktop\Codding_stuff_MW\DataAnalysis_POC\device_data_sample_GPTcreated.csv"
+from csv_generator import file_path_gen
 
-df = pd.read_csv(file_for_analyze)
+df = pd.read_csv(file_path_gen)
 
 users_with_unknown_error = set(df[df["ErrorMessage"] == "Unknown"]["UserID"])
 users_with_browser_crash = set(df[df["CrashCause"] == "Browser"]["UserID"])
